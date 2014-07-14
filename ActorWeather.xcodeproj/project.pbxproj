@@ -22,6 +22,20 @@
 			remoteGlobalIDString = 408868C619733E7E00D6F2CC;
 			remoteInfo = ActorWeather;
 		};
+		408868F21974335E00D6F2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408868ED1974335E00D6F2CC /* Swactor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4010F0ED19689A23001C42E7;
+			remoteInfo = Swactor;
+		};
+		408868F41974335E00D6F2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408868ED1974335E00D6F2CC /* Swactor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4010F0F819689A23001C42E7;
+			remoteInfo = SwactorTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +48,7 @@
 		408868D919733E7E00D6F2CC /* ActorWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActorWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408868DE19733E7E00D6F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorWeatherTests.swift; sourceTree = "<group>"; };
+		408868ED1974335E00D6F2CC /* Swactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swactor.xcodeproj; path = SwiftPods/Swactor/Swactor.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,7 @@
 		408868BE19733E7E00D6F2CC = {
 			isa = PBXGroup;
 			children = (
+				408868ED1974335E00D6F2CC /* Swactor.xcodeproj */,
 				408868C919733E7E00D6F2CC /* ActorWeather */,
 				408868DC19733E7E00D6F2CC /* ActorWeatherTests */,
 				408868C819733E7E00D6F2CC /* Products */,
@@ -107,6 +123,15 @@
 				408868DE19733E7E00D6F2CC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		408868EE1974335E00D6F2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				408868F31974335E00D6F2CC /* Swactor.framework */,
+				408868F51974335E00D6F2CC /* SwactorTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +201,12 @@
 			mainGroup = 408868BE19733E7E00D6F2CC;
 			productRefGroup = 408868C819733E7E00D6F2CC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 408868EE1974335E00D6F2CC /* Products */;
+					ProjectRef = 408868ED1974335E00D6F2CC /* Swactor.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				408868C619733E7E00D6F2CC /* ActorWeather */,
@@ -183,6 +214,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		408868F31974335E00D6F2CC /* Swactor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swactor.framework;
+			remoteRef = 408868F21974335E00D6F2CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		408868F51974335E00D6F2CC /* SwactorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwactorTests.xctest;
+			remoteRef = 408868F41974335E00D6F2CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		408868C519733E7E00D6F2CC /* Resources */ = {
@@ -325,6 +373,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftPods/Swactor/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ActorWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +388,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftPods/Swactor/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ActorWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +451,7 @@
 				408868E519733E7E00D6F2CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		408868E619733E7E00D6F2CC /* Build configuration list for PBXNativeTarget "ActorWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +460,7 @@
 				408868E819733E7E00D6F2CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
