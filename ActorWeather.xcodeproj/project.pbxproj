@@ -12,6 +12,7 @@
 		408868D219733E7E00D6F2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408868D019733E7E00D6F2CC /* Main.storyboard */; };
 		408868D419733E7E00D6F2CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408868D319733E7E00D6F2CC /* Images.xcassets */; };
 		408868E019733E7E00D6F2CC /* ActorWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */; };
+		408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868F719748C2900D6F2CC /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		408868DE19733E7E00D6F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorWeatherTests.swift; sourceTree = "<group>"; };
 		408868ED1974335E00D6F2CC /* Swactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swactor.xcodeproj; path = SwiftPods/Swactor/Swactor.xcodeproj; sourceTree = "<group>"; };
+		408868F719748C2900D6F2CC /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,8 @@
 		408868C919733E7E00D6F2CC /* ActorWeather */ = {
 			isa = PBXGroup;
 			children = (
+				408868F91975A07900D6F2CC /* WeatherCore */,
+				408868F619748C1200D6F2CC /* Cells */,
 				408868CC19733E7E00D6F2CC /* AppDelegate.swift */,
 				408868CE19733E7E00D6F2CC /* ViewController.swift */,
 				408868D019733E7E00D6F2CC /* Main.storyboard */,
@@ -132,6 +136,21 @@
 				408868F51974335E00D6F2CC /* SwactorTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		408868F619748C1200D6F2CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				408868F719748C2900D6F2CC /* WeatherCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		408868F91975A07900D6F2CC /* WeatherCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WeatherCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,7 @@
 			files = (
 				408868CF19733E7E00D6F2CC /* ViewController.swift in Sources */,
 				408868CD19733E7E00D6F2CC /* AppDelegate.swift in Sources */,
+				408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
