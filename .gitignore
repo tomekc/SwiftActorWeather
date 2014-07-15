@@ -21,7 +21,6 @@ build/*
 *.perspective
 *.perspectivev3
 *.pbxuser
-*.xcworkspace
 xcuserdata
 
 # Other source repository archive directories (protects when importing)
