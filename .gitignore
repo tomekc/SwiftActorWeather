@@ -21,7 +21,7 @@ build/*
 *.perspective
 *.perspectivev3
 *.pbxuser
-xcuserdata
+xcuserdata/
 
 # Other source repository archive directories (protects when importing)
 .hg
