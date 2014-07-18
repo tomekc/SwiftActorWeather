@@ -13,6 +13,7 @@
 		408868D419733E7E00D6F2CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408868D319733E7E00D6F2CC /* Images.xcassets */; };
 		408868E019733E7E00D6F2CC /* ActorWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */; };
 		408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868F719748C2900D6F2CC /* WeatherCell.swift */; };
+		40F5B2FE1976E1B200BC2C31 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		408868ED1974335E00D6F2CC /* Swactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swactor.xcodeproj; path = SwiftPods/Swactor/Swactor.xcodeproj; sourceTree = "<group>"; };
 		408868F719748C2900D6F2CC /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		408868FA1975DE0A00D6F2CC /* JSONMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONMapper.xcodeproj; path = SwiftPods/JSONMapper/JSONMapper.xcodeproj; sourceTree = "<group>"; };
+		40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		408868F91975A07900D6F2CC /* WeatherCore */ = {
 			isa = PBXGroup;
 			children = (
+				40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */,
 			);
 			name = WeatherCore;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F5B2FE1976E1B200BC2C31 /* WeatherService.swift in Sources */,
 				408868CF19733E7E00D6F2CC /* ViewController.swift in Sources */,
 				408868CD19733E7E00D6F2CC /* AppDelegate.swift in Sources */,
 				408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */,

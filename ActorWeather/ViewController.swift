@@ -11,11 +11,15 @@ import Swactor
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    @IBOutlet var tview: UITableView 
+    @IBOutlet var tview: UITableView
+    
+    var weatherService:WeatherService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.weatherService = WeatherService(tv: tview)
+        weatherService?.loadAll()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        return 5;
+        return self.weatherService!.cityCount;
     }
     
     func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
