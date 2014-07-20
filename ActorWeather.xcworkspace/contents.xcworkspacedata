@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftPods/JSONMapper/JSONMapper.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ActorWeather.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SwiftPods/Swactor/Swactor.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SwiftPods/JSONMapper/JSONMapper.xcodeproj">
    </FileRef>
 </Workspace>

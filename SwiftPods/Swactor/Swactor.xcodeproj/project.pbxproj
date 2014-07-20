@@ -405,6 +405,7 @@
 				4010F10519689A23001C42E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4010F10619689A23001C42E7 /* Build configuration list for PBXNativeTarget "SwactorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				4010F10819689A23001C42E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

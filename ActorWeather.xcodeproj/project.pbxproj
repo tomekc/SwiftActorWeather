@@ -38,19 +38,33 @@
 			remoteGlobalIDString = 4010F0F819689A23001C42E7;
 			remoteInfo = SwactorTests;
 		};
-		408868FF1975DE0A00D6F2CC /* PBXContainerItemProxy */ = {
+		40ECF6F11979CDDF0057977B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 408868FA1975DE0A00D6F2CC /* JSONMapper.xcodeproj */;
+			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 405B0A3F196C866A00C3D801;
 			remoteInfo = JSONMapper;
 		};
-		408869011975DE0A00D6F2CC /* PBXContainerItemProxy */ = {
+		40ECF6F31979CDDF0057977B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 408868FA1975DE0A00D6F2CC /* JSONMapper.xcodeproj */;
+			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 405B0A4A196C866B00C3D801;
 			remoteInfo = JSONMapperTests;
+		};
+		40ECF6F51979CDDF0057977B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40F5B308197925D400BC2C31;
+			remoteInfo = "JSONMapper-iOS";
+		};
+		40ECF6F71979CDDF0057977B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40F5B312197925D400BC2C31;
+			remoteInfo = "JSONMapper-iOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,7 +80,7 @@
 		408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorWeatherTests.swift; sourceTree = "<group>"; };
 		408868ED1974335E00D6F2CC /* Swactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swactor.xcodeproj; path = SwiftPods/Swactor/Swactor.xcodeproj; sourceTree = "<group>"; };
 		408868F719748C2900D6F2CC /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
-		408868FA1975DE0A00D6F2CC /* JSONMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONMapper.xcodeproj; path = SwiftPods/JSONMapper/JSONMapper.xcodeproj; sourceTree = "<group>"; };
+		40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONMapper.xcodeproj; path = SwiftPods/Swactor/../JSONMapper/JSONMapper.xcodeproj; sourceTree = "<group>"; };
 		40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +105,7 @@
 		408868BE19733E7E00D6F2CC = {
 			isa = PBXGroup;
 			children = (
-				408868FA1975DE0A00D6F2CC /* JSONMapper.xcodeproj */,
+				40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */,
 				408868ED1974335E00D6F2CC /* Swactor.xcodeproj */,
 				408868C919733E7E00D6F2CC /* ActorWeather */,
 				408868DC19733E7E00D6F2CC /* ActorWeatherTests */,
@@ -172,11 +186,13 @@
 			name = WeatherCore;
 			sourceTree = "<group>";
 		};
-		408868FB1975DE0A00D6F2CC /* Products */ = {
+		40ECF6EB1979CDDF0057977B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				408869001975DE0A00D6F2CC /* JSONMapper.framework */,
-				408869021975DE0A00D6F2CC /* JSONMapperTests.xctest */,
+				40ECF6F21979CDDF0057977B /* JSONMapper.framework */,
+				40ECF6F41979CDDF0057977B /* JSONMapperTests.xctest */,
+				40ECF6F61979CDDF0057977B /* JSONMapper-iOS.framework */,
+				40ECF6F81979CDDF0057977B /* JSONMapper-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,8 +266,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 408868FB1975DE0A00D6F2CC /* Products */;
-					ProjectRef = 408868FA1975DE0A00D6F2CC /* JSONMapper.xcodeproj */;
+					ProductGroup = 40ECF6EB1979CDDF0057977B /* Products */;
+					ProjectRef = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
 				},
 				{
 					ProductGroup = 408868EE1974335E00D6F2CC /* Products */;
@@ -281,18 +297,32 @@
 			remoteRef = 408868F41974335E00D6F2CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		408869001975DE0A00D6F2CC /* JSONMapper.framework */ = {
+		40ECF6F21979CDDF0057977B /* JSONMapper.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = JSONMapper.framework;
-			remoteRef = 408868FF1975DE0A00D6F2CC /* PBXContainerItemProxy */;
+			remoteRef = 40ECF6F11979CDDF0057977B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		408869021975DE0A00D6F2CC /* JSONMapperTests.xctest */ = {
+		40ECF6F41979CDDF0057977B /* JSONMapperTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = JSONMapperTests.xctest;
-			remoteRef = 408869011975DE0A00D6F2CC /* PBXContainerItemProxy */;
+			remoteRef = 40ECF6F31979CDDF0057977B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40ECF6F61979CDDF0057977B /* JSONMapper-iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "JSONMapper-iOS.framework";
+			remoteRef = 40ECF6F51979CDDF0057977B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40ECF6F81979CDDF0057977B /* JSONMapper-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JSONMapper-iOSTests.xctest";
+			remoteRef = 40ECF6F71979CDDF0057977B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

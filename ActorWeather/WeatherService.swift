@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Swactor
+import JSONMapper
 
 
 // ----------------------------------------------------------------------
@@ -18,7 +19,7 @@ class WeatherData {
     var MinTemp: Float?
     var MaxTemp: Float?
 }
-class WeatherResponse {
+class WeatherResponse : JSONSerializable {
     var cityName:String?
     
     
