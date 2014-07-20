@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import Swactor
 
 class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var tview: UITableView
     
     var weatherService:WeatherService?
+    
+    let ZERO_K:Float = 273.15
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        return self.weatherService!.cityCount;
+        return weatherService!.numberOfRows()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
@@ -39,9 +40,21 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("WeatherCell", forIndexPath: indexPath) as WeatherCell
         
-        cell.cityName.text = "Foo"
-        cell.tempMax.text = "99.9"
-        cell.tempMin.text = "0.0"
+//        println(weatherService?.cityData)
+        
+        let data  = weatherService?.model.getData(indexPath.row)
+        let weather = data?.weather
+        
+        cell.cityName.text = data?.cityName
+        
+        let maxTemp = weather?.maxTemp
+        cell.tempMax.text =  String(format: "%.1f", maxTemp.getOrElse(ZERO_K) - ZERO_K)
+        
+        let minTemp = weather?.minTemp
+        cell.tempMin.text =  String(format: "%.1f", minTemp.getOrElse(ZERO_K) - ZERO_K)
+        
+        // "\(data?.weather?.maxTemp)"
+//        cell.tempMin.text = "\(data?.weather?.minTemp)"
         
         return cell
         

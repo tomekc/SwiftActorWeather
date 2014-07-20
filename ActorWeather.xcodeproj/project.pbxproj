@@ -13,6 +13,9 @@
 		408868D419733E7E00D6F2CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408868D319733E7E00D6F2CC /* Images.xcassets */; };
 		408868E019733E7E00D6F2CC /* ActorWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */; };
 		408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868F719748C2900D6F2CC /* WeatherCell.swift */; };
+		40D2C68C197C1062005AB467 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C68B197C1062005AB467 /* JSONObject.swift */; };
+		40D2C68E197C1070005AB467 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C68D197C1070005AB467 /* Actor.swift */; };
+		40D2C690197C6303005AB467 /* Optional+getOrElse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C68F197C6303005AB467 /* Optional+getOrElse.swift */; };
 		40F5B2FE1976E1B200BC2C31 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,48 +26,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 408868C619733E7E00D6F2CC;
 			remoteInfo = ActorWeather;
-		};
-		408868F21974335E00D6F2CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 408868ED1974335E00D6F2CC /* Swactor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4010F0ED19689A23001C42E7;
-			remoteInfo = Swactor;
-		};
-		408868F41974335E00D6F2CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 408868ED1974335E00D6F2CC /* Swactor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4010F0F819689A23001C42E7;
-			remoteInfo = SwactorTests;
-		};
-		40ECF6F11979CDDF0057977B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 405B0A3F196C866A00C3D801;
-			remoteInfo = JSONMapper;
-		};
-		40ECF6F31979CDDF0057977B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 405B0A4A196C866B00C3D801;
-			remoteInfo = JSONMapperTests;
-		};
-		40ECF6F51979CDDF0057977B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40F5B308197925D400BC2C31;
-			remoteInfo = "JSONMapper-iOS";
-		};
-		40ECF6F71979CDDF0057977B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40F5B312197925D400BC2C31;
-			remoteInfo = "JSONMapper-iOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -78,9 +39,10 @@
 		408868D919733E7E00D6F2CC /* ActorWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActorWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408868DE19733E7E00D6F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorWeatherTests.swift; sourceTree = "<group>"; };
-		408868ED1974335E00D6F2CC /* Swactor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swactor.xcodeproj; path = SwiftPods/Swactor/Swactor.xcodeproj; sourceTree = "<group>"; };
 		408868F719748C2900D6F2CC /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
-		40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONMapper.xcodeproj; path = SwiftPods/Swactor/../JSONMapper/JSONMapper.xcodeproj; sourceTree = "<group>"; };
+		40D2C68B197C1062005AB467 /* JSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONObject.swift; path = SwiftPods/JSONMapper/JSONMapper/JSONObject.swift; sourceTree = "<group>"; };
+		40D2C68D197C1070005AB467 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actor.swift; path = SwiftPods/Swactor/Swactor/Actor.swift; sourceTree = "<group>"; };
+		40D2C68F197C6303005AB467 /* Optional+getOrElse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Optional+getOrElse.swift"; path = "ActorWeather/Optional+getOrElse.swift"; sourceTree = "<group>"; };
 		40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +67,7 @@
 		408868BE19733E7E00D6F2CC = {
 			isa = PBXGroup;
 			children = (
-				40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */,
-				408868ED1974335E00D6F2CC /* Swactor.xcodeproj */,
+				40D2C68A197C0FE6005AB467 /* Libraries */,
 				408868C919733E7E00D6F2CC /* ActorWeather */,
 				408868DC19733E7E00D6F2CC /* ActorWeatherTests */,
 				408868C819733E7E00D6F2CC /* Products */,
@@ -161,15 +122,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		408868EE1974335E00D6F2CC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				408868F31974335E00D6F2CC /* Swactor.framework */,
-				408868F51974335E00D6F2CC /* SwactorTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		408868F619748C1200D6F2CC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,15 +138,14 @@
 			name = WeatherCore;
 			sourceTree = "<group>";
 		};
-		40ECF6EB1979CDDF0057977B /* Products */ = {
+		40D2C68A197C0FE6005AB467 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				40ECF6F21979CDDF0057977B /* JSONMapper.framework */,
-				40ECF6F41979CDDF0057977B /* JSONMapperTests.xctest */,
-				40ECF6F61979CDDF0057977B /* JSONMapper-iOS.framework */,
-				40ECF6F81979CDDF0057977B /* JSONMapper-iOSTests.xctest */,
+				40D2C68F197C6303005AB467 /* Optional+getOrElse.swift */,
+				40D2C68D197C1070005AB467 /* Actor.swift */,
+				40D2C68B197C1062005AB467 /* JSONObject.swift */,
 			);
-			name = Products;
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,16 +215,6 @@
 			mainGroup = 408868BE19733E7E00D6F2CC;
 			productRefGroup = 408868C819733E7E00D6F2CC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 40ECF6EB1979CDDF0057977B /* Products */;
-					ProjectRef = 40ECF6EA1979CDDF0057977B /* JSONMapper.xcodeproj */;
-				},
-				{
-					ProductGroup = 408868EE1974335E00D6F2CC /* Products */;
-					ProjectRef = 408868ED1974335E00D6F2CC /* Swactor.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				408868C619733E7E00D6F2CC /* ActorWeather */,
@@ -281,51 +222,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		408868F31974335E00D6F2CC /* Swactor.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swactor.framework;
-			remoteRef = 408868F21974335E00D6F2CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		408868F51974335E00D6F2CC /* SwactorTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwactorTests.xctest;
-			remoteRef = 408868F41974335E00D6F2CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40ECF6F21979CDDF0057977B /* JSONMapper.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSONMapper.framework;
-			remoteRef = 40ECF6F11979CDDF0057977B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40ECF6F41979CDDF0057977B /* JSONMapperTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = JSONMapperTests.xctest;
-			remoteRef = 40ECF6F31979CDDF0057977B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40ECF6F61979CDDF0057977B /* JSONMapper-iOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = "JSONMapper-iOS.framework";
-			remoteRef = 40ECF6F51979CDDF0057977B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		40ECF6F81979CDDF0057977B /* JSONMapper-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "JSONMapper-iOSTests.xctest";
-			remoteRef = 40ECF6F71979CDDF0057977B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		408868C519733E7E00D6F2CC /* Resources */ = {
@@ -352,9 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F5B2FE1976E1B200BC2C31 /* WeatherService.swift in Sources */,
+				40D2C690197C6303005AB467 /* Optional+getOrElse.swift in Sources */,
 				408868CF19733E7E00D6F2CC /* ViewController.swift in Sources */,
 				408868CD19733E7E00D6F2CC /* AppDelegate.swift in Sources */,
+				40D2C68E197C1070005AB467 /* Actor.swift in Sources */,
 				408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */,
+				40D2C68C197C1062005AB467 /* JSONObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

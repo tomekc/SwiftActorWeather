@@ -41,6 +41,10 @@ class JSONDeserializationContext : LogicValue {
         return self.source[field] as Int?
     }
     
+    func getFloat(field:String) -> Float? {
+        return self.source[field] as Float?
+    }
+    
     func getBool(field:String) -> Bool? {
         return self.source[field] as Bool?
     }
