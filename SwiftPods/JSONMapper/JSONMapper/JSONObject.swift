@@ -58,7 +58,7 @@ class JSONDeserializationContext : LogicValue {
         }
     }
     
-    func getArray<T>(field:String) -> Array<T> {
+    func getArray<T:AnyObject>(field:String) -> Array<T> {
         if let array = source[field] as? Array<T> {
                 return array
         } else {

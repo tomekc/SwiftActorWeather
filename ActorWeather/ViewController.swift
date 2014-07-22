@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    @IBOutlet var tview: UITableView
+    @IBOutlet var tview: UITableView!
     
     var weatherService:WeatherService?
     

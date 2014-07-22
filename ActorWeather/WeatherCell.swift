@@ -11,9 +11,9 @@ import UIKit
 
 class WeatherCell : UITableViewCell {
     
-    @IBOutlet var cityName: UILabel
-    @IBOutlet var tempMax: UILabel
-    @IBOutlet var tempMin: UILabel
+    @IBOutlet var cityName: UILabel!
+    @IBOutlet var tempMax: UILabel!
+    @IBOutlet var tempMin: UILabel!
     
 
     
