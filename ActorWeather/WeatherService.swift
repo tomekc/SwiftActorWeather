@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
-
+import JSONMapper
+import Swactor
 
 // ----------------------------------------------------------------------
 // MODEL
@@ -61,7 +62,7 @@ struct UpdateTableMessage {
 // ----------------------------------------------------------------------
 // ACTORS
 class WeatherDownloader : Actor {
-    
+      
     let config = NSURLSessionConfiguration.defaultSessionConfiguration()
     let session: NSURLSession
     let uiUpdateActor: ActorRef
@@ -110,6 +111,7 @@ class TableViewUpdateActor : ActorUI {
     
     init(tableView:UITableView) {
         self.tableView = tableView
+        super.init()
     }
     
     override func receive(message: Any) {

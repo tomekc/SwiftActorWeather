@@ -5,7 +5,7 @@
       location = "group:ActorWeather.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SwiftPods/JSONMapper/JSONMapper.xcodeproj">
+      location = "group:SwiftPods/SwiftJSONMapper/JSONMapper.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SwiftPods/Swactor/Swactor.xcodeproj">

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4054448D19853A80004E4FC8 /* JSONMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4054448B19853A80004E4FC8 /* JSONMapper.framework */; };
+		4054448E19853A80004E4FC8 /* Swactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4054448C19853A80004E4FC8 /* Swactor.framework */; };
 		408868CD19733E7E00D6F2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868CC19733E7E00D6F2CC /* AppDelegate.swift */; };
 		408868CF19733E7E00D6F2CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868CE19733E7E00D6F2CC /* ViewController.swift */; };
 		408868D219733E7E00D6F2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408868D019733E7E00D6F2CC /* Main.storyboard */; };
 		408868D419733E7E00D6F2CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408868D319733E7E00D6F2CC /* Images.xcassets */; };
 		408868E019733E7E00D6F2CC /* ActorWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */; };
 		408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408868F719748C2900D6F2CC /* WeatherCell.swift */; };
-		40D2C68C197C1062005AB467 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C68B197C1062005AB467 /* JSONObject.swift */; };
-		40D2C68E197C1070005AB467 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C68D197C1070005AB467 /* Actor.swift */; };
 		40D2C690197C6303005AB467 /* Optional+getOrElse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2C68F197C6303005AB467 /* Optional+getOrElse.swift */; };
 		40F5B2FE1976E1B200BC2C31 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4054443319847920004E4FC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4054448B19853A80004E4FC8 /* JSONMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONMapper.framework; path = "SwiftPods/SwiftJSONMapper/build/Debug-iphoneos/JSONMapper.framework"; sourceTree = "<group>"; };
+		4054448C19853A80004E4FC8 /* Swactor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swactor.framework; path = "SwiftPods/Swactor/build/Debug-iphoneos/Swactor.framework"; sourceTree = "<group>"; };
 		408868C719733E7E00D6F2CC /* ActorWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActorWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408868CB19733E7E00D6F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408868CC19733E7E00D6F2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +55,6 @@
 		408868DE19733E7E00D6F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408868DF19733E7E00D6F2CC /* ActorWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorWeatherTests.swift; sourceTree = "<group>"; };
 		408868F719748C2900D6F2CC /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
-		40D2C68B197C1062005AB467 /* JSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONObject.swift; path = SwiftPods/JSONMapper/JSONMapper/JSONObject.swift; sourceTree = "<group>"; };
-		40D2C68D197C1070005AB467 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actor.swift; path = SwiftPods/Swactor/Swactor/Actor.swift; sourceTree = "<group>"; };
 		40D2C68F197C6303005AB467 /* Optional+getOrElse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Optional+getOrElse.swift"; path = "ActorWeather/Optional+getOrElse.swift"; sourceTree = "<group>"; };
 		40F5B2FD1976E1B200BC2C31 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4054448D19853A80004E4FC8 /* JSONMapper.framework in Frameworks */,
+				4054448E19853A80004E4FC8 /* Swactor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,8 @@
 		408868BE19733E7E00D6F2CC = {
 			isa = PBXGroup;
 			children = (
+				4054448B19853A80004E4FC8 /* JSONMapper.framework */,
+				4054448C19853A80004E4FC8 /* Swactor.framework */,
 				40D2C68A197C0FE6005AB467 /* Libraries */,
 				408868C919733E7E00D6F2CC /* ActorWeather */,
 				408868DC19733E7E00D6F2CC /* ActorWeatherTests */,
@@ -142,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				40D2C68F197C6303005AB467 /* Optional+getOrElse.swift */,
-				40D2C68D197C1070005AB467 /* Actor.swift */,
-				40D2C68B197C1062005AB467 /* JSONObject.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -158,6 +173,7 @@
 				408868C319733E7E00D6F2CC /* Sources */,
 				408868C419733E7E00D6F2CC /* Frameworks */,
 				408868C519733E7E00D6F2CC /* Resources */,
+				4054443319847920004E4FC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,9 +267,7 @@
 				40D2C690197C6303005AB467 /* Optional+getOrElse.swift in Sources */,
 				408868CF19733E7E00D6F2CC /* ViewController.swift in Sources */,
 				408868CD19733E7E00D6F2CC /* AppDelegate.swift in Sources */,
-				40D2C68E197C1070005AB467 /* Actor.swift in Sources */,
 				408868F819748C2900D6F2CC /* WeatherCell.swift in Sources */,
-				40D2C68C197C1062005AB467 /* JSONObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,11 +385,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ActorWeather-bnpwwjnjdllptdazdmvgvulymhna/Build/Products/Debug",
+					"$(PROJECT_DIR)/SwiftPods/SwiftJSONMapper/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/SwiftPods/Swactor/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ActorWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = SwiftPods/WeatherKit;
 			};
 			name = Debug;
 		};
@@ -386,11 +403,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ActorWeather-bnpwwjnjdllptdazdmvgvulymhna/Build/Products/Debug",
+					"$(PROJECT_DIR)/SwiftPods/SwiftJSONMapper/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/SwiftPods/Swactor/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ActorWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = SwiftPods/WeatherKit;
 			};
 			name = Release;
 		};
