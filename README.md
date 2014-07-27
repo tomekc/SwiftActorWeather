@@ -2,6 +2,14 @@
 
 This project was intented to demo an Actor framework I am developing, [Swift Actors](https://github.com/tomekc/SwiftActors). In addition, I used [JSON to Swift object mapper](https://github.com/tomekc/SwiftJSONMapper) and small [extensions to Swift's Optionals](https://gist.github.com/tomekc/a1e21f588eacdad1c860) 
 
+## Before you build the project
+
+Project dependencies now are included as git submodules. After checking out,
+you notice that additional frameworks are missing. You need to do:
+
+	git submodule init
+	gut submodule update
+
 ## What are actors?
 
 Actor model is an approach to concurrency known in Erlang, and implemented in Scala. For JVM there is popular framework, [Akka](http://www.akka.io)
