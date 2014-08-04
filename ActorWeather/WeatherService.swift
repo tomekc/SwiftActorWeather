@@ -18,7 +18,7 @@ class WeatherData : JSONSerializable {
     var minTemp: Float?
     var maxTemp: Float?
     
-    init(_ c: JSONDeserializationContext) {
+    required init(_ c: JSONDeserializationContext) {
         temp = c.getFloat("temp")
         minTemp = c.getFloat("temp_min")
         maxTemp = c.getFloat("temp_max")
@@ -31,7 +31,7 @@ class WeatherResponse : JSONSerializable, Printable {
     var cityName:String?
     var weather:WeatherData?
     
-    init(_ c: JSONDeserializationContext) {
+    required init(_ c: JSONDeserializationContext) {
         cityName = c.getString("name")
         weather = c.getObject("main", ofClass: WeatherData.self)
     }

@@ -5,7 +5,7 @@
 // @tomekcejner
 extension Optional {
     func getOrElse(val:T) -> T  {
-        if getLogicValue() {
+        if self != nil {
             return self!
         } else {
             return val

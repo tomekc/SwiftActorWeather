@@ -48,10 +48,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.cityName.text = data?.cityName
         
         let maxTemp = weather?.maxTemp
-        cell.tempMax.text =  String(format: "%.1f", maxTemp.getOrElse(ZERO_K) - ZERO_K)
+        cell.tempMax.text =  String(format: "%.1f", (maxTemp ?? ZERO_K) - ZERO_K)
         
         let minTemp = weather?.minTemp
-        cell.tempMin.text =  String(format: "%.1f", minTemp.getOrElse(ZERO_K) - ZERO_K)
+        cell.tempMin.text =  String(format: "%.1f", (minTemp ?? ZERO_K) - ZERO_K)
         
         // "\(data?.weather?.maxTemp)"
 //        cell.tempMin.text = "\(data?.weather?.minTemp)"
